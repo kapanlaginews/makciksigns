@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://1.bp.blogspot.com/-q1hXV76r2pE/YJKe2l9-01I/AAAAAAAAAE8/dqKbm4_8s64-17G5vlywo8hbvkJBLV--QCNcBGAsYHQ/s32/idea.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script  src="https://pasukan.my.id/ad/head.js" type="text/javascript" ></script>
+	<title>
+        ▷ Cara Menghitung Standar Deviasi Data Berkelompok
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#dc3545;--color-accent:#dc354515;--color-bg:#fff;--color-bg-secondary:#c82333;--color-secondary:#c82333;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#ffffff;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #c82333}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Cara Menghitung Standar Deviasi Data Berkelompok",
+  "datePublished": "2021-08-12",
+  "image": "https://i.ytimg.com/vi/k-56FBcE6ks/hqdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "makciksigns",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cara+menghitung+standar+deviasi+data+berkelompok",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{ "@context": "https://schema.org/", 
+"@type": "CreativeWorkSeries", 
+"name": "makciksigns", "aggregateRating": 
+{ "@type": "AggregateRating", 
+"ratingValue": "4.5", 
+"bestRating": "5", 
+"ratingCount": "158" } }
+</script>
+	<!-- Head tag Code -->
+</script><script type='text/javascript' src='//inquiryclank.com/9e/2b/a7/9e2ba7859749ffcbe541725d70fa9e2d.js'></script>
+
+<script  src="https://pasukan.my.id/go/back_indo.js" type="text/javascript" ></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWR1H8SP53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWR1H8SP53');
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            ▷ Cara Menghitung Standar Deviasi Data Berkelompok
+            </a>
+        </h1>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Cari disini...' type='text' name="q" required autocomplete="off" id="search-query">
+            <script  src="https://pasukan.my.id/ad/header.js" type="text/javascript" ></script>        </center>
+    </header>
+    <main>
+        <article>
+    <p><a href="/">cara menghitung standar deviasi data berkelompok</a> - Selamat masuk pada website kami. kau mampu menelusuri tulisan yg sinkron lalu selera engkau lantaran kami mempunyai kabar yg selanjutnya update beserta ditulis dengan metode perkataan yang santai serta gampang dipahami semua orang. kali ini admin akan membahas tulisan hampiran cara menghitung standar deviasi data berkelompok.
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middle.js" type="text/javascript" ></script>
+</center>		
+    <p>Kali ini membahas khusus tentang ukuran pemusatan data ukuran letak data dan uk. Supaya lebih jelas silakan perhatikan rumus di bawah ini. September 30th 2020 - Tag Cara Menghitung Standar Deviasi Data Berkelompok 2020 06 03 2020 06 03 Pengertian Standar deviasi Kegunaan kelebihan contoh cara menghitung Juga disebut simpangan baku standar deviasi adalah angka yang digunakan untuk mengetahui bagaimana pengukuran untuk suatu kelompok tersebar dari nilai rata. Menghitung standar deviasi dengan kalkulator tag cara menghitung varians data berkelompok rumus standar deviasi oleh dosenpendidikan diposting pada 06 06 2020 dalam statistika standar deviasi adalah ukuran yang digunakan untuk mengukur jumlah variasi atau sebaran sejumlah nilai data. Cara Menghitung Standar Deviasi Data Berkelompok Cara menghitung Median Modus Mode Kuartil dan Desil January 5th 2021 - Cara menghitung Jangkauan range Rata rata Simpangan Simpangan Baku standar deviasi dan Variansi 19 October 2015 Rumus Standard Deviasi dan Cara Menghitung di.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://biofar.id/wp-content/uploads/2019/07/Standar-Deviasi.jpg" alt="Rumus Standar Deviasi Dan Contoh Cara Menghitungnya" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUoAZnQ1CyWZ_nrVo-bk1EbbQsGs2j6n9uFUrLFGaKasxFRkZo3ZueK01VlSljB-uyjoQ';">
+        <figcaption>Rumus Standar Deviasi Dan Contoh Cara Menghitungnya from biofar.id</figcaption>
+    </figure>
+        <p>
+							<a href="/baca/lirik-lagu-tentang-alam-sekitar.html">lirik lagu tentang alam sekitar</a> Rumus Standar Deviasi Data Berkelompok. Standar deviasi adalah nilai yang digunakan untuk mengetahui sebaran data dalam sampel yang mana menyajikan hubungan seberapa dekat data individu dengan nilai rata-ratanya. Cara Menghitung Standar Deviasi Data Berkelompok. Berikut adalah varian dan standar deviasi untuk data berkelompok. Supaya lebih jelas silakan perhatikan rumus di bawah ini. Data berkelompok rumus standar deviasi data berkelompok cara menghitung standar deviasi dengan kalkulator cara menghitung standar deviasi di excel rumus untuk menghitung di excel adalah stdev sebagai gambaran silakan simak contoh di bawah ini.
+							</p>
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middlev2.js" type="text/javascript" ></script>
+</center>		
+    <h2>cara menghitung standar deviasi data berkelompok</h2>
+    <p>
+							<a href="/baca/soal-lingkaran-dan-pembahasan.html">soal lingkaran dan pembahasan</a> Rumus Deviasi untuk data tidak berkelompok adalah sebagai berikut. Selain dengan cara manual kalian juga bisa memanfaatkan kalkulator untuk menghitungnya. Video ini membahas Cara Menghitung Varians dan Standar Deviasi Data berkelompok Menggunakan EXCEL Materi Statistika Bisnis Jurusan Akuntansi PNB. Rumus varian dan standar deviasi data berkelompok tidak jauh berbeda dengan rumus varian dan standar deviasi data tunggal. Dengan demikian rata-rata selisih data-data itu terhadap mean tanpa diabaikan tanda positif dan negatifnya sebagai berikut. Video Tutorial Imath Tutorial ini memberikan materi tentang Statistika. cara menghitung standar deviasi data berkelompok.
+							</p>
+	<h3>Data berkelompok rumus standar deviasi data berkelompok cara menghitung standar deviasi dengan kalkulator cara menghitung standar deviasi di excel rumus untuk menghitung di excel adalah stdev sebagai gambaran silakan simak contoh di bawah ini.</h3>
+    <p>
+							<a href="/baca/resep-nasi-goreng-mawut-spesial.html">resep nasi goreng mawut spesial</a> Rumus Deviasi untuk data tidak berkelompok adalah sebagai berikut. Berikut adalah varian dan standar deviasi untuk data berkelompok. Video Tutorial Imath Tutorial ini memberikan materi tentang Statistika. Standar Deviasi dan Varians - ppt download Tutorial Cara Mudah dan Cepat Menentukan dan Menghitung Simpangan. Mean-nya 8 17 22 10 13 5 14. cara menghitung standar deviasi data berkelompok.
+							</p>
+	<h3>Rumus Varian beginaligned s2 frac1n-1sum_i1kf_ileft x_i-bar x right 2 fracdisplaystyle sum_.</h3>
+    <p>
+							<a href="/baca/contoh-pidato-lingkungan-bersih.html">contoh pidato lingkungan bersih</a> 8 17 22 10 13. Rumus Standar Deviasi Data Berkelompok. Rumus Varian beginaligned s2 frac1n-1sum_i1kf_ileft x_i-bar x right 2 fracdisplaystyle sum_. Standar Deviasi dan Varians - ppt download Tutorial Cara Mudah dan Cepat Menentukan dan Menghitung Simpangan. Rumus varian dan standar deviasi data berkelompok tidak jauh berbeda dengan rumus varian dan standar deviasi data tunggal. cara menghitung standar deviasi data berkelompok.
+							</p>
+		
+<p>Terima kasih telah berkunjung di website beta. supaya tulisan yg beta bahas diatas menaruh manfaat  pembaca dengan berjibun badan yg sudah pernah berkunjung di website ini. beta pamrih desakan bermula seluruh pihak jatah pelebaran website ini supaya lebih baik dan.</p>
+
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Statistika 1 5 Pengolahan Deskriptif Ukuran Penyebaran Materi" src="https://slidetodoc.com/presentation_image_h/a9284482da67175c71035a95f73b54fd/image-19.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkfY1khNnuwviyrQv4lf-r-Qq9s1KP0orpg';" />
+        <small>Source: slidetodoc.com</small>
+                    <p>Supaya lebih jelas silakan perhatikan rumus di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menghitung Standar Deviasi 12 Langkah Dengan Gambar" src="https://www.wikihow.com/images_en/thumb/b/be/Calculate-Standard-Deviation-Step-12-Version-6.jpg/v4-460px-Calculate-Standard-Deviation-Step-12-Version-6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-3vKwbdubE-69pMoPG_jcDigf3YOMq1mFg';" />
+        <small>Source: id.wikihow.com</small>
+                    <p>Supaya lebih jelas silakan perhatikan rumus di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Standar Deviasi Data Kelompok" src="https://slidetodoc.com/presentation_image_h/014565ca23810492c4fbb8ec3884023e/image-5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPO4PuJC2BgNKEfQLnAXQ5Erh5qawzoJMa0ye9LGHKy9ug8it2GIwn4E7kyt6N8y0ubT0';" />
+        <small>Source: brainstudy.info</small>
+                    <p>CARA MUDAH MENCARI RANGE DEVIASI VARIAN STANDAR DEVIASI DATA KELOMPOK DENGAN EXCEL - YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Sekelompok Data Mempuny Lihat Cara Penyelesaian Di Qanda" src="https://thumb.mathpresso.io/qanda-storage/2af5f710-311c-40ba-95d3-d9267d186f40.jpg?target_format=jpg&amp;width=642" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2grQ4DuktPUCXPRRqRfBdrRD4PdPCGHD05g';" />
+        <small>Source: qanda.ai</small>
+                    <p>A Deviasi Untuk Data Tidak Berkelompok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Standar Deviasi Www Sridianti Com" src="https://www.sridianti.com/wp-content/uploads/2019/08/Rumus-standar-deviasi-dalam-Excel-.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCv61KTppIP-GR5qWOlzaK_Sa9OdDAYcnYQ';" />
+        <small>Source: www.sridianti.com</small>
+                    <p>Pada contoh ini kita akan menghitung variance dan standard deviasi dari data sebaran frekuensi diameter setinggi dada atau DBH.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Standar Deviasi Adalah Rumus Statistika Ketahui Cara Menghitung Dan Kegunaannya Merdeka Com Line Today" src="https://obs.line-scdn.net/0hwqWqWnFXKF5qCAHMMflXCVBeKzFZZDtdDj55QDpmdmoQb2sMUT5gbUtdIW8SbG8ABDxiOE4AM28SOm8OA2Zg/w580" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgbg-alHOwbxLIWZ8On7XPTmMsCGkVgUr8RQ';" />
+        <small>Source: today.line.me</small>
+                    <p>Pengertian Rumus dan Contoh Soal Lengkap P10_penyebaran data simpangan baku standar deviasi Standar Deviasi - Pengertian Rumus dan Contoh Soal Rumus Standar Deviasi dan Contoh Cara Menghitungnya Rumus Standar Deviasi - Cara Menghitung dan Contoh Soal Contoh Soal Standar Deviasi Data Tidak Berkelompok Rumus Standar Deviasi - Cara Menghitung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Standar Deviasi Adalah Rumus Statistika Ketahui Cara Menghitung Dan Kegunaannya Merdeka Com Line Today" src="https://obs.line-scdn.net/0hnbehUkHwMU1YERjfA9tOGmJHMiJrfSJOPCdgUwh_b3kidnIfY38rfnlCbSkgJHYTNiV8LngWKnwgI3YdMX4r/w644" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhalXbKfim0LLpgRTjJQnHVnAXynIgVg3qbYGaQIkDug7vfNStDPl1wwsLDjZzUN0U7c';" />
+        <small>Source: today.line.me</small>
+                    <p>Simpangan Baku Deviasi Standar Simpangan Rata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Cara Untuk Menghitung Mean Standar Deviasi Dan Standar Error" src="https://www.wikihow.com/images_en/thumb/a/a9/Calculate-Mean%2C-Standard-Deviation%2C-and-Standard-Error-Step-1-Version-2.jpg/v4-460px-Calculate-Mean%2C-Standard-Deviation%2C-and-Standard-Error-Step-1-Version-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGHMO9XtWAy2K2H-8CD_6qBH8lvuvciIIwHg';" />
+        <small>Source: id.wikihow.com</small>
+                    <p>Pengertian Rumus dan Contoh Soal Lengkap P10_penyebaran data simpangan baku standar deviasi Standar Deviasi - Pengertian Rumus dan Contoh Soal Rumus Standar Deviasi dan Contoh Cara Menghitungnya Rumus Standar Deviasi - Cara Menghitung dan Contoh Soal Contoh Soal Standar Deviasi Data Tidak Berkelompok Rumus Standar Deviasi - Cara Menghitung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Standar Deviasi Data Tidak Berkelompok" src="https://image.slidesharecdn.com/bab04-statistika-141122005239-conversion-gate01/95/bab-04-statistika-15-638.jpg?cb=1416617629" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_gHPw3HpzTTLv8mjrc46y-z7qHhGiGSBk3wi4DumAIFjCWvwkt9CRGKA4aT92S_hRKA';" />
+        <small>Source: contoh-contoh-soal.blogspot.com</small>
+                    <p>Standar deviasi adalah sebuah nilai statistik yang digunakan untuk menentukan sebuah sebaran data dalam suatu sampel serta seberapa dekat titik data individu ke mean atau rata rata nilai sampelnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pengolahan Data Statistik Begini Cara Menghitung Standar Deviasi Kumparan Com" src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1614416311/a0tqxxztcg5fuyyfkdwp.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGNMJH6zpuMswI2lydg70bdkyPpm_ZYfit11pRqycM5diDaH_Fdgrij4CSv2SP_ow4nc';" />
+        <small>Source: kumparan.com</small>
+                    <p>Deviasicara menghitung variasi wikihow may 13th 2018 - varians yang rendah menandakan data yang berkelompok dekat satu cara menghitung nilai ini biasanya dipakai sebagai dasar untuk menghitung standar deviasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Standar Deviasi Pengertian Rumus Cara Berhitung Dan Contoh" src="https://savoystomp.com/wp-content/uploads/2020/07/8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycJr_KxlOeg_mPE6hbiCYsAWdB-aN1rXqnw';" />
+        <small>Source: savoystomp.com</small>
+                    <p>Cara Menghitung Standar Deviasi Data Berkelompok Cara menghitung Median Modus Mode Kuartil dan Desil January 5th 2021 - Cara menghitung Jangkauan range Rata rata Simpangan Simpangan Baku standar deviasi dan Variansi 19 October 2015 Rumus Standard Deviasi dan Cara Menghitung di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Standar Deviasi Pengertian Rumus Dan Contoh Soal" src="https://rumusrumus.com/wp-content/uploads/2018/12/standar-deviasi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5nx0Vb5JnNrgzHqLNwn-Fbi6dGZWtDKIMA';" />
+        <small>Source: rumusrumus.com</small>
+                    <p>Untuk data berkelompok rumus yang digunakan tidak lah jauh berbeda.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/baca/cara-menghapus-sheet-di-excel.html"><i>&larr; cara menghapus sheet di excel</i></a>
+                                                                    
+                                        <a href="/baca/cara-menghias-bolu-sunat.html"><i>cara menghias bolu sunat &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<center>
+<script  src="https://pasukan.my.id/ad/footer.js" type="text/javascript" ></script>
+</center>		</center>
+    </main>
+    <footer style="padding-top: 1px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type='text/javascript' src='//inquiryclank.com/a4/6a/e6/a46ae66cc05a3cf9702a5a5b3a0acf74.js'></script>
+
+<script  src="https://pasukan.my.id/ad/popme_indo.js" type="text/javascript" ></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+	<script  src="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-double-ads4.js" ></script>
+	<script  src="https://pasukan.my.id/ad/body.js" type="text/javascript" ></script>
+	
+</body>
+
+</html>

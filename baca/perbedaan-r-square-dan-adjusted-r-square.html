@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://1.bp.blogspot.com/-q1hXV76r2pE/YJKe2l9-01I/AAAAAAAAAE8/dqKbm4_8s64-17G5vlywo8hbvkJBLV--QCNcBGAsYHQ/s32/idea.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script  src="https://pasukan.my.id/ad/head.js" type="text/javascript" ></script>
+	<title>
+        ▷ Perbedaan R Square Dan Adjusted R Square
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#dc3545;--color-accent:#dc354515;--color-bg:#fff;--color-bg-secondary:#c82333;--color-secondary:#c82333;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#ffffff;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #c82333}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Perbedaan R Square Dan Adjusted R Square",
+  "datePublished": "2021-08-12",
+  "image": "http://www.eviews.com/help/content/images/testing.035.3.047.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "makciksigns",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=perbedaan+r+square+dan+adjusted+r+square",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{ "@context": "https://schema.org/", 
+"@type": "CreativeWorkSeries", 
+"name": "makciksigns", "aggregateRating": 
+{ "@type": "AggregateRating", 
+"ratingValue": "4.5", 
+"bestRating": "5", 
+"ratingCount": "657" } }
+</script>
+	<!-- Head tag Code -->
+</script><script type='text/javascript' src='//inquiryclank.com/9e/2b/a7/9e2ba7859749ffcbe541725d70fa9e2d.js'></script>
+
+<script  src="https://pasukan.my.id/go/back_indo.js" type="text/javascript" ></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWR1H8SP53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWR1H8SP53');
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            ▷ Perbedaan R Square Dan Adjusted R Square
+            </a>
+        </h1>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Cari disini...' type='text' name="q" required autocomplete="off" id="search-query">
+            <script  src="https://pasukan.my.id/ad/header.js" type="text/javascript" ></script>        </center>
+    </header>
+    <main>
+        <article>
+    <p><a href="/">perbedaan r square dan adjusted r square</a> - Selamat hadir di website kami. engkau sanggup menelusuri artikel yg sesuai lagi kehendak engkau lantaran awak mempunyai warta yg lalu update lagi ditulis lagi gaya cakap yg santai serta gampang dipahami seluruh sendiri. kali ini admin akan membicarakan tulisan dekat-dekat perbedaan r square dan adjusted r square.
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middle.js" type="text/javascript" ></script>
+</center>		
+    <p>Ini juga merupakan ukuran statistik yang mewakili proporsi varians untuk variabel dependen. Perbedaan Antara R-Squared dan Adjusted R-Squared. Menurut Santoso 2001 bahwa untuk regresi dengan lebih dari dua variabel bebas digunakan Adjusted R 2 sebagai koefisien determinasi. Data excel untuk olah data tutorial vidio ini10 ribu2. Always consider the adjusted r-squared as the evaluation metrics unless we build a model with single feature.</p>
+            <figure>
+        <img class="v-cover ads-img" src="http://diarioretailsudamericabusiness.com/do/wp-content/uploads/2019/03/top_esp.jpg" alt="Expocomer Panama Diario Retail Sudamerica Business" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRPH-_a0mmttmQwCycyu76V1LbvjK4o0TM0Q';">
+        <figcaption>Expocomer Panama Diario Retail Sudamerica Business from diarioretailsudamericabusiness.com</figcaption>
+    </figure>
+        <p>
+							<a href="/baca/download-lagu-want-you-back.html">download lagu want you back</a> Investor juga dapat menggunakannya untuk menghitung kinerja portofolio mereka terhadap tolok ukur tertentu. The value of Adjusted R Squared decreases as k increases also while considering R Squared acting a penalization factor for a bad variable and rewarding factor for a good or significant variable. Kita bisa melihat perbedaan antara nilai R-squared dan Adjusted R-squared jika kita menambahkan variabel independen acak ke model kita. Apa perbedaan di antara mereka. Menurut Santoso 2001 bahwa untuk regresi dengan lebih dari dua variabel bebas digunakan Adjusted R 2 sebagai koefisien determinasi. Data excel untuk olah data tutorial vidio ini10 ribu2.
+							</p>
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middlev2.js" type="text/javascript" ></script>
+</center>		
+    <h2>perbedaan r square dan adjusted r square</h2>
+    <p>
+							<a href="/baca/bagaimana-cara-memasak-daging-sapi-supaya-cepat-lunak-brainly.html">bagaimana cara memasak daging sapi supaya cepat lunak brainly</a> Dalam koefisien R-squared adalah penentuan alat statistik yang mengukur sejauh mana keamanan kinerja apa pun dapat dikaitkan dengan kinerja indeks benchmark tertentu. Variabel dan R-Squared mengasumsikan setiap variabel menjelaskan. Pak saya mau tanya saya kan menggunakan metode stepwise hasil dari model 1 x1 pada r square 0956 dan model 2 x2 0958 pada adjusted r square model 1 x1 0955 dan model 2 0957 koefisien determinasinya pake adjr2 apa r2 aja ya pak soalnya menurut dosen uji t pake r2 dan uji f pake adjr2 nah koefisien determinasi da interpretasinya gimana ya pak. Kita bisa melihat perbedaan antara nilai R-squared dan Adjusted R-squared jika kita menambahkan variabel independen acak ke model kita. Adjusted R Squared however makes use of the degree of freedom to compensate and penalize for the inclusion of a bad variable. Dalam regresi linier bivariat tidak ada banyak R dan R 2 r 2. perbedaan r square dan adjusted r square.
+							</p>
+	<h3>Apa perbedaan antara R-squared dan Adjusted R-squared.</h3>
+    <p>
+							<a href="/baca/harga-kue-tart-mayestik.html">harga kue tart mayestik</a> Jadi satu perbedaan adalah penerapan. Always consider the adjusted r-squared as the evaluation metrics unless we build a model with single feature. Adjusted R Squared however makes use of the degree of freedom to compensate and penalize for the inclusion of a bad variable. R square saya 0082 dan adjusted R Square saya -0168. Investor juga dapat menggunakannya untuk menghitung kinerja portofolio mereka terhadap tolok ukur tertentu. perbedaan r square dan adjusted r square.
+							</p>
+	<h3>Dalam koefisien R-squared adalah penentuan alat statistik yang mengukur sejauh mana keamanan kinerja apa pun dapat dikaitkan dengan kinerja indeks benchmark tertentu.</h3>
+    <p>
+							<a href="/baca/manfaat-koperasi-bagi-kehidupan-masyarakat-adalah.html">manfaat koperasi bagi kehidupan masyarakat adalah</a> Pak saya mau tanya saya kan menggunakan metode stepwise hasil dari model 1 x1 pada r square 0956 dan model 2 x2 0958 pada adjusted r square model 1 x1 0955 dan model 2 0957 koefisien determinasinya pake adjr2 apa r2 aja ya pak soalnya menurut dosen uji t pake r2 dan uji f pake adjr2 nah koefisien determinasi da interpretasinya gimana ya pak. Adjusted R-squared menyesuaikan statistik berdasarkan jumlah variabel independen dalam model. Adjusted R Squared can be expressed as. Modal berlawanan dengan r 2 umumnya harus merupakan kelipatan R 2 dalam model regresi berganda. In this case both r-squared and adjusted r-squared will be the same. perbedaan r square dan adjusted r square.
+							</p>
+		
+<p>Terima kasih sudah berkunjung pada website aku. hendaknya tulisan yang beta telaah diatas memberikan untung  pembaca lalu berjibun diri yang sudah berkunjung pada website ini. beta berharap desakan mulai semua kubu jatah pelebaran website ini agar lebih cantik dan.</p>
+
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Evaluation Regression Models Data Vedas" src="https://datavedas.com/wp-content/uploads/2018/04/image041.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmoNY8NYftagnrYbvG6UEdF3XpgX3hkzhgA';" />
+        <small>Source: www.datavedas.com</small>
+                    <p>The adjusted R-squared adjusts for the number of terms in the model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Assumptions Of Configuration Theory Download Table" src="https://www.researchgate.net/profile/Ela-Canbolat-2/publication/301941666/figure/tbl1/AS:671512268910596@1537112409090/Assumptions-of-configuration-theory_Q640.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJi6ThklcqNS3TxwZk_lkRDEsFo_I7mugl3Q';" />
+        <small>Source: www.researchgate.net</small>
+                    <p>Modal berlawanan dengan r 2 umumnya harus merupakan kelipatan R 2 dalam model regresi berganda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="E Proceeding Of The 2nd International Nusantara Cultural Heitage Symposium By Rudielfendes Issuu" src="https://image.isu.pub/180808084344-52c1cb4a7d7ae754dc47f85e33f8eec4/jpg/page_1_thumb_large.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1lOgihNm92dZzH9otlhtYwpLeKOMZ2kw3w';" />
+        <small>Source: issuu.com</small>
+                    <p>Kita bisa melihat perbedaan antara nilai R-squared dan Adjusted R-squared jika kita menambahkan variabel independen acak ke model kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Analisis Regresi Dengan Excel Uji Statistik" src="http://www.statistikian.com/wp-content/uploads/blogger/-D8NL7dxL00A/U0MJ1mhKclI/AAAAAAAACgc/tSf6XvHLUls/s1600/Regression%2BStatistics.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCapXOSDfCPMvCdY-swL_bhIHMhNr39kbtww';" />
+        <small>Source: www.statistikian.com</small>
+                    <p>Jadi satu perbedaan adalah penerapan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Penjelasan Uji Regresi Linear Dalam Excel Uji Statistik" src="https://www.statistikian.com/wp-content/uploads/2021/03/Jasa-Konsultasi-Penelitian.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVl_XgBLrCUgYmmoN0gSDpx78jaF0sAvLkqA';" />
+        <small>Source: www.statistikian.com</small>
+                    <p>Always consider the adjusted r-squared as the evaluation metrics unless we build a model with single feature.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Accuracy Rates Using The Dichotomous Measure Of Accuracy Download Table" src="https://www.researchgate.net/profile/Gary-Monroe-2/publication/49278972/figure/tbl2/AS:670718769496079@1536923224878/Accuracy-Rates-Using-the-Dichotomous-Measure-of-Accuracy_Q640.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjxO9KyPiZPDqiDxx0bu8k2MlmViy3bsW5Q';" />
+        <small>Source: www.researchgate.net</small>
+                    <p>The adjusted R-squared adjusts for the number of terms in the model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Eviews Help Nonlinear Least Squares" src="http://www.eviews.com/help/content/images/Regress2.030.5.39.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhSN7-3D8KPKuf91EahDD00tqYVuVZStbEQ';" />
+        <small>Source: www.eviews.com</small>
+                    <p>The objective of any regression exercise is to explain the variation in the dependent variable Y.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Regresi Berganda Solusi Masalah R Square Yang Rendah Agung Budi Santoso" src="https://agungbudisantoso.com/wp-content/uploads/2017/07/08.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPhprAh9UMqkf5cnm3Ie6VnoaYcg-4kk_EufI8ET1anDwIkQQQeuFPJ5xKeOBkOonR90';" />
+        <small>Source: agungbudisantoso.com</small>
+                    <p>Meskipun baik R-Squared dan Adjusted R-Squared memberikan gambaran tentang titik data yang berada dalam garis regresi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="R Square Vs Adjusted R Square" src="https://image.slidesharecdn.com/rsquarevsadjustedrsquare-171230051759/95/r-square-vs-adjusted-r-square-2-638.jpg?cb=1514611467" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0nwW9XlwzmlAfNj1wG0CPIwgjEj_LKbVHGR4UrbQAVaXWp18IzGqsm6AmIyctalGoAQo';" />
+        <small>Source: www.slideshare.net</small>
+                    <p>Importantly its value increases only when the new term improves the model fit more than expected by chance alone.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membaca Hasil Regresi Data Panel Dengan Eviews Uji Statistik" src="https://www.statistikian.com/wp-content/uploads/2017/03/Output-Fixed-Effect-Regresi-Data-Panel-dengan-Eviews.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7eCpVvVA0ozHzVZaGDDNxMR7O06ubeYh4g';" />
+        <small>Source: www.statistikian.com</small>
+                    <p>Dalam regresi linier kita sering mendapatkan beberapa R dan kuadrat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Diabstraksikan Oleh Smno Psl Ppsub Agst Ppt Download" src="https://slideplayer.info/slide/3385892/12/images/42/HASIL+DAN+INTERPRESTASI.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlY0Ywk0JfdiImmR3G1k7osCfRpgsZ1Imkag';" />
+        <small>Source: slideplayer.info</small>
+                    <p>Adjusted R-squared menyesuaikan statistik berdasarkan jumlah variabel independen dalam model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Eviews Help Coefficient Diagnostics" src="http://www.eviews.com/help/content/images/testing.035.3.052.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sBUW7d4lFU4slgdesA8MVCeQkzUoLsLryQ';" />
+        <small>Source: www.eviews.com</small>
+                    <p>Buku statistik inferensial flashdisk pembelajaran 6in1 SPSSSMOSsmart pls warp pls.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/baca/contoh-descriptive-text-tentang-bunga.html"><i>&larr; contoh descriptive text tentang bunga</i></a>
+                                                                    
+                                        <a href="/baca/contoh-dialog-bahasa-jawa-antara-anak-dan-orang-tua.html"><i>contoh dialog bahasa jawa antara anak dan orang tua &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<center>
+<script  src="https://pasukan.my.id/ad/footer.js" type="text/javascript" ></script>
+</center>		</center>
+    </main>
+    <footer style="padding-top: 1px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type='text/javascript' src='//inquiryclank.com/a4/6a/e6/a46ae66cc05a3cf9702a5a5b3a0acf74.js'></script>
+
+<script  src="https://pasukan.my.id/ad/popme_indo.js" type="text/javascript" ></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+	<script  src="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-double-ads4.js" ></script>
+	<script  src="https://pasukan.my.id/ad/body.js" type="text/javascript" ></script>
+	
+</body>
+
+</html>

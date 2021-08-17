@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://1.bp.blogspot.com/-q1hXV76r2pE/YJKe2l9-01I/AAAAAAAAAE8/dqKbm4_8s64-17G5vlywo8hbvkJBLV--QCNcBGAsYHQ/s32/idea.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script  src="https://pasukan.my.id/ad/head.js" type="text/javascript" ></script>
+	<title>
+        ▷ Pie Chart In R
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#dc3545;--color-accent:#dc354515;--color-bg:#fff;--color-bg-secondary:#c82333;--color-secondary:#c82333;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#ffffff;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #c82333}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Pie Chart In R",
+  "datePublished": "2021-08-12",
+  "image": "https://i.pinimg.com/474x/63/68/58/6368584cb2195c6351e447339f0a825b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "makciksigns",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pie+chart+in+r",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{ "@context": "https://schema.org/", 
+"@type": "CreativeWorkSeries", 
+"name": "makciksigns", "aggregateRating": 
+{ "@type": "AggregateRating", 
+"ratingValue": "4.5", 
+"bestRating": "5", 
+"ratingCount": "758" } }
+</script>
+	<!-- Head tag Code -->
+</script><script type='text/javascript' src='//inquiryclank.com/9e/2b/a7/9e2ba7859749ffcbe541725d70fa9e2d.js'></script>
+
+<script  src="https://pasukan.my.id/go/back_indo.js" type="text/javascript" ></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWR1H8SP53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWR1H8SP53');
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            ▷ Pie Chart In R
+            </a>
+        </h1>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Cari disini...' type='text' name="q" required autocomplete="off" id="search-query">
+            <script  src="https://pasukan.my.id/ad/header.js" type="text/javascript" ></script>        </center>
+    </header>
+    <main>
+        <article>
+    <p><a href="/">pie chart in r</a> - Selamat bertandang pada website beta. engkau mampu menelusuri artikel yg sinkron beserta hasrat kau karena kami memiliki maklumat yang kemudian update beserta ditulis dan metode cakap yang santai dan gampang dipahami seluruh badan. batang air ini admin bakal membahas tulisan tentang pie chart in r.
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middle.js" type="text/javascript" ></script>
+</center>		
+    <p>Pie charts are not recommended in the R documentation and their features are somewhat limited. This function takes in a vector of non-negative numbers. The basic computations of the chart are provided with the standard R functions pie and chisqtest and the lessR function chisqtest. Pie charts are the classic choice for showing proportions for mutually-exclusive categories. Home Highcharter R Package Essentials for Easy Interactive Graphs Highchart Interactive Pie Chart and Alternatives in R.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/b5/43/46/b54346f362eeecdc41cf6d3e1e2bde58.jpg" alt="Musicians Brains Each Instrument Broken Down Into Pie Charts Music Jokes Music Nerd Teaching Music" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDLSXkIM1MyzGrCBI21Fzt3crnPMnU57PBdTKP75MpReGCb3ddEV11bLlQzzJGVIBW-SM';">
+        <figcaption>Musicians Brains Each Instrument Broken Down Into Pie Charts Music Jokes Music Nerd Teaching Music from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+							<a href="/baca/resensi-buku-fiksi-lengkap.html">resensi buku fiksi lengkap</a> A pie-chart is a representation of values in the form of slices of a circle with different colors. Highcharter R Package Essentials for Easy Interactive Graphs. The additional parameters are used to control labels color title etc. In order to create pie chart subplots you need to use the domain attribute. We change the R Pie chart Slice direction using a clockwise argument and. This article describes how to create a pie chart and donut chart using the ggplot2 R package.
+							</p>
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middlev2.js" type="text/javascript" ></script>
+</center>		
+    <h2>pie chart in r</h2>
+    <p>
+							<a href="/baca/model-baju-batik-pramugari-terbaru-2014.html">model baju batik pramugari terbaru 2014</a> Pie chart is drawn using the pie function in R programming. Usage piex labels namesx edges 200 radius 08 clockwise FALSE initangle ifclockwise 90 else 0 density NULL angle 45 col NULL border NULL lty NULL main NULL Arguments. This function takes in a vector of non-negative numbers. This R tutorial describes how to create a pie chart for data visualization using R software and ggplot2 package. A pie chart is a type of chart that is shaped like a circle and uses slices to represent proportions of a whole. In excel this is pretty easy and straight forward and looks like the following. pie chart in r.
+							</p>
+	<h3>Changing Density of a Pie Chart Slice.</h3>
+    <p>
+							<a href="/baca/cara-setting-tp-link-w8151n-menjadi-repeater.html">cara setting tp link w8151n menjadi repeater</a> Highcharter R Package Essentials for Easy Interactive Graphs. Pie charts are the classic choice for showing proportions for mutually-exclusive categories. Use the following code to arrive at our pie chart. Pie charts are created with the function pie x labels where x is a non-negative numeric vector indicating the area of each slice and labels notes a character vector of. In order to create pie chart subplots you need to use the domain attribute. pie chart in r.
+							</p>
+	<h3>In this post well show how to use this package to create a basic pie chart in R.</h3>
+    <p>
+							<a href="/baca/pidato-tentang-teman-yang-baik.html">pidato tentang teman yang baik</a> How to Make a Basic Pie Chart The following code shows how to create a basic pie chart for a dataset using ggplot2. Create a Pie Chart in R Programming Change Colors of Pie Chart in R. We change the R Pie chart Slice direction using a clockwise argument and. One of the more popular packages used today is the ggplot2 package. In R the pie chart is created using the pie function which takes positive numbers as a vector input. pie chart in r.
+							</p>
+		
+<p>Terima kasih telah berkunjung pada website aku. mudah-mudahan artikel yang aku ulas diatas memberikan untung bagi pembaca beserta berjibun badan yg sudah pernah berkunjung di website ini. kami berharap dukungan berawal seluruh partai  pemekaran website ini biar lebih bagus lagi.</p>
+
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pie Chart Pie Chart Chart Infographic Pie Graph" src="https://i.pinimg.com/originals/30/47/96/30479659ef094df4eb84e97681ae8934.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNKOyGN_OvDR8DVZXETSH5Yz2njFaNXsPKeU-cyQP8pnyDhaYBqnD0k0zNqAXB1Wmpp0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Usage piex labels namesx edges 200 radius 08 clockwise FALSE initangle ifclockwise 90 else 0 density NULL angle 45 col NULL border NULL lty NULL main NULL Arguments.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Pie Charts" src="https://i.pinimg.com/originals/f1/6d/f1/f16df17a7730263d59bad214ef3a4bed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWFDn9QNZOWSIPE1DeBY7txIwwzzudRfIUw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In this post well show how to use this package to create a basic pie chart in R.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Pie Chart Pie Chart Colorful Backgrounds Graphing" src="https://i.pinimg.com/originals/50/6c/7c/506c7c49c887d6b539a86d53e15f0e0f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpaF55KhJSjJV7Jaa8TZ82bje9E2gCmc1Adg';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>The basic computations of the chart are provided with the standard R functions pie and chisqtest and the lessR function chisqtest.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ssrs How To Add A Pie Chart Pie Chart Business Intelligence Ads" src="https://i.pinimg.com/564x/2d/90/4f/2d904f92f3a0061a0e98f78226437bd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyKADZWvW9kml3LsP2PKwLZlbxz6jVEO273A';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>A pie-chart is a representation of values in the form of slices of a circle with different colors.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Alpha Pie Chart Chart Infographic Pie Chart Resume Design Creative" src="https://i.pinimg.com/600x315/ec/8b/33/ec8b33bb76f11c7bdaaf6663d6ee58a1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9WJkkfuih9MykU49d5w6FwdBO0DPncuNHQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Now lets get into creating a pie chart in R.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="43 Noteworthy Musical Memes That Ll Rid You Of Your Trebles Funny Pictures Pie Chart Music Memes" src="https://i.pinimg.com/736x/bc/d1/3e/bcd13ed78795346a941e8c08a56b14f3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZmdzDJgKEpxyxPIsC9FuLhzBo2JUsKz1qA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Creating a pie chart in R.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Split Pie Chart Powerpoint Diagram Template Regarding 5 Piece Pie Chart Template 201820159 Powerpoint Chart Templates Powerpoint Charts Pie Chart Template" src="https://i.pinimg.com/736x/c0/e2/13/c0e213807b42de7194bd3e86ba653ebf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdjGWKdtKgpWXyA8fFspYWKAco1oQKr5twlA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In R the pie chart is created using the pie function which takes positive numbers as a vector input.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Data Visualization Pie Chart R Python Dec 2014 Copyrigt Www Decisionstats Com Licensed Under A Creative Commons Attributi Visualizacao De Dados" src="https://i.pinimg.com/736x/60/ed/49/60ed490c232c8739c7c0d488ee8a5287.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg_f9_eLvJVKfGJx89ZN2RKTPsChV34tPaFQwOLYo2-GitdbUvZaOGjaulyhEMmHfrxzg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>A pie chart is a circle divided into sectors that each represent a proportion of the whole.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Compound Bubble And Pie Chart Data Visualization Pie Chart Bubbles" src="https://i.pinimg.com/originals/a4/94/c3/a494c37abd6f01dacebd29a55b37b3fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR41arFOO6Uq6BPy38-5jCAcJ6OqQJLnMBm7w';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Pie charts are not recommended in the R documentation and their features are somewhat limited.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Brain Of A Singer Teaching Music My Autobiography Discover Music" src="https://i.pinimg.com/originals/cb/53/da/cb53da55234542b7eae1ec0d5d35b0cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUlD3hss8RMRUyEGHtdg7eeD7sHriAUa8e6w0tfNRWR5i5mw2nNz8XPkbEzbVraH1nFY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Change Slice Direction Name of Pie Chart.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="What You Do When You Like Somebody Funny Charts Funny Pie Charts Funny Quotes" src="https://i.pinimg.com/originals/97/03/46/9703463803b4304e1281849e9e2a46bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReoCJQQnDNI0CM6mnzZBlmdj3bL_3MQIVNng';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Most basic pie chart.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jessie Wanted To Conduct A Survey Organize The Results And Build A Pie Chart With The Crush Survey Results Pie Chart Pie Chart Examples Chart Design" src="https://i.pinimg.com/600x315/a6/36/30/a63630c6e70caa41dd69b94d9454e5bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_iIT-IYL_L3A4iqRkUfyvDc0HyZ8oHts2ZA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>This R tutorial describes how to create a pie chart for data visualization using R software and ggplot2 package.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/baca/daftar-negara-berkembang-di-dunia.html"><i>&larr; daftar negara berkembang di dunia</i></a>
+                                                                    
+                                        <a href="/baca/daftar-lagu-cover-tami-aulia.html"><i>daftar lagu cover tami aulia &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<center>
+<script  src="https://pasukan.my.id/ad/footer.js" type="text/javascript" ></script>
+</center>		</center>
+    </main>
+    <footer style="padding-top: 1px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type='text/javascript' src='//inquiryclank.com/a4/6a/e6/a46ae66cc05a3cf9702a5a5b3a0acf74.js'></script>
+
+<script  src="https://pasukan.my.id/ad/popme_indo.js" type="text/javascript" ></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+	<script  src="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-double-ads4.js" ></script>
+	<script  src="https://pasukan.my.id/ad/body.js" type="text/javascript" ></script>
+	
+</body>
+
+</html>
